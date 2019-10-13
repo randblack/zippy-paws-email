@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 
 <head>
 </head>
 
 <body>
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
   <style>
     .email-container {
       width: 100%;
@@ -31,6 +34,11 @@
       font-size: 16px;
       font-family: Arial, Helvetica, sans-serif;
       color: #333;
+    }
+
+    .youtube-thumbnail {
+      max-width: 400px;
+      padding: 60px 0 0 0;
     }
 
     .cta {
@@ -74,20 +82,36 @@
 
     @media all and (max-width: 640px) {
       .email-content {
-        width: 90%;
+        width: 100%;
+      }
+
+      .youtube-thumbnail {
+        max-width: 350px;
+      }
+
+      .rule {
+        width: 300px;
       }
     }
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
       .email-content {
-        width: 440px;
+        width: 90%;
+      }
+
+      .youtube-thumbnail {
+        max-width: 350px;
+      }
+
+      .rule {
+        width: 350px;
       }
     }
   </style>
   <table border="0" class="email-container">
     <tr>
       <td>
-        <table align="center" class="email-content">
+        <table border="0" align="center" class="email-content">
           <tr>
             <td align="center">
               <img class="company-logo" src="./zippy-paws-logo.png">
@@ -111,7 +135,7 @@
           </tr>
           <tr>
             <td align="center">
-              <a href="https://www.youtube.com/watch?v=SdNO75EJums"><img style="max-width:400px;padding:60px 0 0 0;"
+              <a href="https://www.youtube.com/watch?v=SdNO75EJums"><img class="youtube-thumbnail"
                   src="http://res.cloudinary.com/techmarketer/image/fetch/w_0.25,c_scale,l_playbutton.png,o_88/q_100,w_650/http://img.youtube.com/vi/SdNO75EJums/maxresdefault.jpg"></img></a>
             </td>
           </tr>
@@ -147,9 +171,9 @@
           </tr>
           <tr>
             <td align="center" class="footer-copy">
-              You have recieved this email as a subscriber to the Zippy Paws newsletter. You can <strong>unsubscribe
-              </strong> from these
-              emails <strong>here</strong>.</br>
+              You have recieved this email as a subscriber to the Zippy Paws newsletter. You can <b>unsubscribe
+              </b> from these
+              emails <b>here</b>.</br>
               (Don’t worry, we wont take it personally).
             </td>
           </tr>
@@ -160,13 +184,9 @@
           </tr>
           <tr>
             <td align="center" class="footer-copy">
-              © Zippy Paws
+              &copy; Zippy Paws
             </td>
           </tr>
-
-
-
-
         </table>
       </td>
     </tr>
