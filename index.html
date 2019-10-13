@@ -13,7 +13,7 @@
       width: 100%;
       table-layout: fixed;
       margin: auto;
-      background: rgb(238, 238, 238);
+      background: #F0F0F0;
       padding: 20px
     }
 
@@ -80,7 +80,12 @@
       color: #0F0088;
     }
 
-    @media all and (max-width: 640px) {
+    @media screen and (max-width: 640px) {
+      .email-container {
+        background: #fff;
+        padding: 0
+      }
+
       .email-content {
         width: 100%;
       }
@@ -91,20 +96,6 @@
 
       .rule {
         width: 300px;
-      }
-    }
-
-    @media only screen and (max-width: 480px) {
-      .email-content {
-        width: 90%;
-      }
-
-      .youtube-thumbnail {
-        max-width: 350px;
-      }
-
-      .rule {
-        width: 350px;
       }
     }
   </style>
